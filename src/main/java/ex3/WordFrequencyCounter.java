@@ -1,4 +1,4 @@
-package hw10.ex3;
+package ex3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.util.*;
 
 class WordFrequencyCounter {
     public static void main(String[] args) {
-        String fileName = "/Users/galyna.gaponova/IdeaProjects/Test1/src/main/java/hw10/ex3/words.txt";
+        String fileName = "src/main/java/ex3/words.txt";
         Map<String, Integer> wordFrequencyMap = countWordFrequency(fileName);
         printWordFrequency(wordFrequencyMap);
     }

@@ -1,4 +1,4 @@
-package hw10.ex1;
+package ex1;
 
 
 import java.io.*;
