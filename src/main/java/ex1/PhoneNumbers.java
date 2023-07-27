@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class TelephonNumbers {
+public class PhoneNumbers {
     public static void main(String[] args) {
         try(BufferedReader reader = new BufferedReader(new FileReader("src/main/java/ex1/file.txt"))) {
             String line;

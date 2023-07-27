@@ -19,26 +19,15 @@ public class Main {
 
     private static List<User> readUserList(String inputFile) throws IOException {
         List<User> userList = new ArrayList<>();
-        BufferedReader br = null;
 
-        try {
-           br = new BufferedReader(new FileReader(inputFile));
-            String header = br.readLine();
+        try (BufferedReader br = new BufferedReader(new FileReader(inputFile))){
+            br.readLine();
             String line;
             while ((line = br.readLine()) != null){
-                String[] tokens = ((String) line).split(" ");
+                String[] tokens = line.split(" ");
                 if(tokens.length == 2){
-                    String name = tokens[0];
-                    int age = Integer.parseInt(tokens[1]);
-                    User user = new User(name,age);
-                    userList.add(user);
+                    userList.add(new User(tokens[0], Integer.parseInt((tokens[1]))));
                 }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            if (br !=null){
-                br.close();
             }
         }
         return userList;
