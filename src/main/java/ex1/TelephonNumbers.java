@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 
 public class TelephonNumbers {
     public static void main(String[] args) {
-        try(BufferedReader reader = new BufferedReader(new FileReader("/Users/galyna.gaponova/IdeaProjects/Test1/src/main/java/hw10/ex1/file.txt"))) {
+        try(BufferedReader reader = new BufferedReader(new FileReader("src/main/java/ex1/file.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (isValidPhoneNumber(line)) {
