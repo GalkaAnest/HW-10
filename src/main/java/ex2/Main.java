@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String inputFile = "src/main/java/ex2/resources/file.txt";
+        String inputFile = "src/main/java/ex2/file.txt";
         String outputFile = "src/main/java/ex2/user.json";
         List<User> userList = readUserList(inputFile);
         writeUserList(userList,outputFile);
